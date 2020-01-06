@@ -151,22 +151,6 @@ def handle():
         elif e.type == SETOBJECT:
             objmap[e.y][e.x] = e.obj
         
-        elif e.type == TWITTER:
-            print "\nAmigos Online:"
-            print e.msg
-
-
-
-import twitter
-twitconn = twitter.Api(username=twitter_login, password=twitter_pass)
-#twitconn.PostUpdate("Estou jogando!")
-
-friends = []
-for tfriend in twitconn.GetFriends():
-    friends += [tfriend.GetScreenName()]
-
-conn.send(str(Event(TWITTER, {'friends': friends})))
-
 
 #loop principal:
 while running:
