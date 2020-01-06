@@ -11,7 +11,7 @@ def receiver():
         if msg != "":
             print msg
 
-DESTINY = ("127.0.0.1", 66666)
+DESTINY = ("127.0.0.1", 666)
 conn = socket.socket()
 #conectando com o destino
 conn.connect(DESTINY)

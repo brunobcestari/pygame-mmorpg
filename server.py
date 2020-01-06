@@ -74,7 +74,7 @@ thread.start_new_thread(sendertext, tuple())
 thread.start_new_thread(parser.monstersmove, tuple())
 
 tcp_root = socket.socket()
-orig = ("127.0.0.1", 66666)
+orig = ("127.0.0.1", 666)
 tcp_root.bind(orig)
 tcp_root.listen(1)
 
